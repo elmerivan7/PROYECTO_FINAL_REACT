@@ -1,0 +1,110 @@
+.certificates-container {
+  font-family: "Nunito", sans-serif;
+  position: relative;
+  .certificates-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    #more-button-container {
+      @media (max-width: 768px) {
+        width: 20% !important;
+      }
+      @media (max-width: 400px) {
+        width: 35% !important;
+      }
+      button {
+        width: 100% !important;
+      }
+    }
+    #certificates-button-container {
+      @media (max-width: 768px) {
+        width: 40% !important;
+      }
+      @media (max-width: 350px) {
+        width: 45% !important;
+      }
+      button {
+        @media (max-width: 768px) {
+          width: 100% !important;
+        }
+      }
+    }
+    .certificates-list {
+      background: rgba(7, 78, 232, 0.8);
+      border-radius: 4px;
+      color: white;
+      position: absolute;
+      width: 140px;
+      top: 33px;
+      opacity: 0.8;
+      @media (max-width: 768px) {
+        width: 40% !important;
+      }
+      @media (max-width: 350px) {
+        width: 45% !important;
+      }
+      .certificate {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5px;
+        p {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-size: 0.9em;
+        }
+        #whiteX {
+          width: 8px;
+          height: 8px;
+          cursor: pointer;
+          &:hover {
+            scale: 1.2;
+          }
+        }
+      }
+    }
+  }
+  .error-container {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+    #certificate-error {
+      width: 50%;
+      color: red;
+      font-size: 0.85em;
+      visibility: hidden;
+    }
+  }
+  #finish-button-container {
+    display: flex;
+    justify-content: flex-end;
+    button {
+      position: absolute;
+      top: 400px;
+      right: 10px;
+      @media (max-width: 768px) {
+        margin-top: 20px;
+        position: static;
+      }
+    }
+  }
+  .error-finish-container {
+    margin-top: 10px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: flex-end;
+    @media (max-width: 768px) {
+      margin-right: 0;
+    }
+    .error-finish {
+      visibility: hidden;
+      color: red;
+      font-size: 0.9em;
+    }
+  }
+}

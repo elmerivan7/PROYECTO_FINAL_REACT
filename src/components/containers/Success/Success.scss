@@ -1,0 +1,33 @@
+.success-container {
+  width: 100%;
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
+  font-family: "Nunito", sans-serif;
+  color: #000000;
+  p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .certificates-container {
+    gap: 10px;
+    display: flex;
+    #certificates-title {
+      white-space: initial;
+      overflow: initial;
+      text-overflow: initial;
+    }
+    .certificates-list {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  #container-success-button {
+    display: flex;
+    justify-content: flex-end;
+    button {
+    }
+  }
+}

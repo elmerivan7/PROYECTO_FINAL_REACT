@@ -1,0 +1,35 @@
+.input-container {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  @media (max-width: 768px) {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+  input {
+    border: 2px solid rgba(170, 170, 170, 1);
+    background: none;
+    border-radius: 4px;
+    outline: none;
+    height: 2.5em;
+    padding-left: 10px;
+    color: #767676;
+  }
+  label {
+    color: #767676;
+    font-size: 0.9em;
+    padding-right: 25px;
+  }
+
+  span {
+    color: red;
+    font-size: 0.85em;
+
+    visibility: hidden;
+    @media (max-width: 768px) {
+      font-size: 0.8em;
+    }
+  }
+}

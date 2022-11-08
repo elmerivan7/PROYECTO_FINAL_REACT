@@ -1,0 +1,46 @@
+.nav-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 30px auto;
+  width: 100%;
+  .button-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-bottom: 3px solid #e5e5e5;
+    button {
+      padding-bottom: 10px;
+      font-family: "Nunito", sans-serif;
+      background: transparent;
+      border: none;
+      font-size: 1em;
+      color: #111111;
+      font-weight: 500;
+
+      &:enabled:hover {
+        cursor: pointer;
+      }
+      &:disabled:hover {
+        cursor: not-allowed;
+      }
+      &.focus {
+        color: #074ee8;
+      }
+      & ~ .focus-border {
+        position: absolute;
+        bottom: -3px;
+        left: 50%;
+        width: 0;
+        height: 3px;
+        background-color: #074ee8;
+        transition: 0.1s;
+      }
+
+      &.focus ~ .focus-border {
+        width: 100%;
+        transition: 0.5s;
+        left: 0;
+      }
+    }
+  }
+}

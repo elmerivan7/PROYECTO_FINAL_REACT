@@ -1,0 +1,15 @@
+.error-404-container {
+  font-family: "Nunito", sans-serif;
+  background: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    @media (max-width: 768px) {
+      width: 95%;
+    }
+  }
+}

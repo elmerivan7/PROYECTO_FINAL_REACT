@@ -1,0 +1,22 @@
+.basic-container {
+  position: relative;
+  .email-phone-container {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  #container-basic-button {
+    display: flex;
+    justify-content: flex-end;
+    #basic-button {
+      position: absolute;
+      top: 400px;
+      right: 10px;
+      @media (max-width: 768px) {
+        position: static;
+      }
+    }
+  }
+}

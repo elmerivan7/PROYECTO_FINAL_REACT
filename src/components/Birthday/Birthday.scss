@@ -1,0 +1,48 @@
+.birthday-container {
+  font-family: "Nunito", sans-serif;
+  color: #767676;
+  font-size: 0.9em;
+  margin-bottom: 50px;
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
+  .span-label {
+    span {
+      color: red;
+      font-size: 0.9em;
+      visibility: hidden;
+    }
+    label {
+      padding-right: 25px;
+    }
+  }
+  .selects-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-flow: row wrap;
+    .select {
+      margin-top: 10px;
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 768px) {
+        width: 45%;
+        margin-top: 5px;
+      }
+      label {
+        font-size: 0.95em;
+      }
+    }
+  }
+}
+
+input,
+select {
+  width: 100%;
+  height: 2.5em;
+  border-radius: 4px;
+  background: none;
+  padding-left: 5px;
+  color: #767676;
+}

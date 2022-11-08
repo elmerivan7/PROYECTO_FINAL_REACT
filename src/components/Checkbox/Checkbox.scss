@@ -1,0 +1,59 @@
+input[type="checkbox"] {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  width: 17px;
+  height: 17px;
+  border-radius: 2px;
+  margin-right: 0.5em;
+  border: 2px solid #074ee8;
+  outline: none;
+  cursor: pointer;
+}
+
+input.checked {
+  background-color: #074ee8;
+  position: relative;
+}
+
+input.checked::before {
+  content: "\2714";
+  font-size: 1em;
+  color: #fff;
+  position: absolute;
+  right: 1px;
+  top: -3px;
+}
+
+.checkbox-container {
+  font-family: "Nunito", sans-serif;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+  margin-bottom: 10px;
+  @media (max-width: 768px) {
+    display: block;
+  }
+  #span-checkbox {
+    color: red;
+    font-size: 0.9em;
+    visibility: hidden;
+    @media (max-width: 768px) {
+      font-size: 0.85em;
+    }
+  }
+  .labelTest {
+    display: flex;
+    align-items: center;
+    .spanChk {
+      color: #111111;
+      font-size: 1em;
+      margin-right: 15px;
+      @media (max-width: 768px) {
+        margin-right: 8px;
+      }
+    }
+  }
+}

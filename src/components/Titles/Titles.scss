@@ -1,0 +1,7 @@
+h1 {
+  color: #074ee8;
+  font-size: 2.5em;
+  @media (max-width: 768px) {
+    font-size: 2em;
+  }
+}

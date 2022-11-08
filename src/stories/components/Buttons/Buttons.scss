@@ -1,0 +1,16 @@
+.buttons-container {
+  button {
+    font-family: "Nunito", sans-serif;
+    gap: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    height: 35px;
+    cursor: pointer;
+    padding: 10px;
+    background: #074ee8;
+    border-radius: 4px;
+    border: none;
+  }
+}
